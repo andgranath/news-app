@@ -22,10 +22,6 @@ app= Flask(__name__)
 @app.route("/")
 
 def index():
-    return "<h1>It's a web app!</h1>"
-
-@app.route("/news")
-def countryloop():
     returnstr=""
     for land in countries:
         print(land)
